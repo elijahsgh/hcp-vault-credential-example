@@ -35,8 +35,8 @@ Outputs:
 secret_output_password = "fa&2OZ1s0Ylc"
 secret_output_user = "myuser"
 
-$ terraform taint vault_generic_secret.dbsecret
-Resource instance vault_generic_secret.dbsecret has been marked as tainted.
+$ terraform taint random_password.db_password
+Resource instance random_password.db_password has been marked as tainted.
 
 $ terraform apply
 random_password.db_password: Refreshing state... [id=none]
@@ -45,17 +45,17 @@ vault_generic_secret.dbsecret: Refreshing state... [id=secret/dbsecret]
 
 <cut for brevity>
 
-Plan: 1 to add, 0 to change, 1 to destroy.
-
 Changes to Outputs:
-  ~ secret_output_password = "fa&2OZ1s0Ylc" -> (known after apply)
+  ~ secret_output_password = "d7=Vd=NHi[]$" -> (known after apply)
   ~ secret_output_user     = "myuser" -> (known after apply)
 
 <cut for brevity>
 
+Apply complete! Resources: 1 added, 1 changed, 1 destroyed.
+
 Outputs:
 
-secret_output_password = "fa&2OZ1s0Ylc"
+secret_output_password = "Lvk(z47K{s@G"
 secret_output_user = "myuser"
 ```
 
