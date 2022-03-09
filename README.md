@@ -46,7 +46,7 @@ vault_generic_secret.dbsecret: Refreshing state... [id=secret/dbsecret]
 <cut for brevity>
 
 Changes to Outputs:
-  ~ secret_output_password = "d7=Vd=NHi[]$" -> (known after apply)
+  ~ secret_output_password = "fa&2OZ1s0Ylc" -> (known after apply)
   ~ secret_output_user     = "myuser" -> (known after apply)
 
 <cut for brevity>
