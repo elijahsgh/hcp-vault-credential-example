@@ -47,7 +47,7 @@ data "vault_generic_secret" "dbsecret" {
 #   access_string = "on ~mydb::* -@all +@read"
 #   engine        = "REDIS"
 #   passwords = [
-#     var.db_password
+#     random_password.db_password.result
 #   ]
 # }
 
