@@ -21,7 +21,9 @@ resource "vault_mount" "kvv2" {
 
 # Initializing random password
 resource "random_password" "db_password" {
-  length  = 12
+  # The length here is set to 16 for AWS ElastiCache requirement
+  # adjust appropriately for target system
+  length  = 16
   special = true
 }
 
